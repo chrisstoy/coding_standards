@@ -26,9 +26,9 @@ matchers.push(
     message: 'Invalid import path starting with /src',
   },
   {
-    // disallow deep imports from @xpo libraries
-    regexp: /.*import.*@xpo.*\/lib\/.*/,
-    message: 'Invalid import path deep linking into @xpo /lib',
+    // disallow deep imports from libraries
+    regexp: /.*import.*@.*\/lib\/.*/,
+    message: 'Invalid import path deep linking into /lib',
   },
   {
     // disallow declaring variables of type `Boolean`
